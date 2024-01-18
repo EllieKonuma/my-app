@@ -1,12 +1,12 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Inovação Fitness: Transformando Desafios em Oportunidades",
+  "text": "Esta é uma oportunidade única para gestores de academias mergulharem em um universo de conhecimento, networking estratégico e tendências inovadoras no cenário fitness.",
   "button": [
     {
       "title": "Explore"
     },
     {
-      "title": "Learn more",
+      "title": "Saiba mais",
       "color": "#fff"
     }
   ]

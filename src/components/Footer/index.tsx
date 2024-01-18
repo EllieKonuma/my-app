@@ -51,38 +51,37 @@ const Footer = ({ t }: any) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
+              <Language>{t("Nos contate!")}</Language>
+              <Large to="/">{t("Nos conte tudo.")}</Large>
               <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
+                {t(
+                  `Você tem alguma pergunta? Sinta-se à vontade para nos mandar um email.`
+                )}
               </Para>
               <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
+                <Chat>{t(`Vamos conversar`)}</Chat>
               </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
+              <Title>{t("Politica")}</Title>
               <Large to="/" left="true">
-                {t("Application Security")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Software Principles")}
+                {t("Aplicação de segurança")}
               </Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
               <Large left="true" to="/">
-                {t("Support Center")}
+                {t("Centro de Suporte")}
               </Large>
               <Large left="true" to="/">
-                {t("Customer Support")}
+                {t("Suporte ao Consumidor")}
               </Large>
             </Col>
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
-              <Language>{t("Address")}</Language>
+              <Language>{t("Endereço")}</Language>
               <Para>Rancho Santa Margarita</Para>
               <Para>2131 Elk Street</Para>
               <Para>California</Para>
@@ -107,6 +106,14 @@ const Footer = ({ t }: any) => {
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
+                    src="512px-Brazilian_flag_icon_round.svg.png"
+                    aria-label="homepage"
+                    width="32px"
+                    height="32px"
+                  />
+                </LanguageSwitch>
+                <LanguageSwitch onClick={() => handleChange("en")}>
+                  <SvgIcon
                     src="united-states.svg"
                     aria-label="homepage"
                     width="30px"
@@ -126,50 +133,6 @@ const Footer = ({ t }: any) => {
           </Row>
         </Container>
       </FooterSection>
-      <Extra>
-        <Container border={true}>
-          <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "3rem" }}
-          >
-            <NavLink to="/">
-              <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                />
-              </LogoContainer>
-            </NavLink>
-            <FooterContainer>
-              <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
-              />
-              <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
-              />
-              <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
-              />
-              <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
-              />
-              <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a>
-            </FooterContainer>
-          </Row>
-        </Container>
-      </Extra>
     </>
   );
 };
